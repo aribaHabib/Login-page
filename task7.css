@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.rootElement{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.flexbox{
+    max-width: 1400px; 
+    margin: 50px auto;
+}
+.loginForm {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 500px;
+}
+.flexbox1{
+    padding: 0 30px 0 30px; 
+    background: #191A24;
+}
+.flexbox2{
+    min-height: 200px;
+    padding: 80px;
+    background-color: #F4F4F4;
+}
+.inner-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 500px;
+    gap: 2rem;
+}
+.single-img{
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+h6{ 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    color: #3E334E;
+}
+p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3E334E;
+}
+.mb-3{
+    padding: 10px 0 10px 0;
+}
+label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3E334E;
+}
+.form-control {
+    padding: 16px;
+    gap: 8px;
+    border: 1px solid #AFA2C3;
+    border-radius: 8px;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    color: #3E334E;      
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+input[type="checkbox"]{
+    text-align: left;     
+    accent-color: #3E334E;
+}
+.link{
+    text-align: right;
+    text-decoration-line: underline;
+}
+.link a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3E334E;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 178px;
+    height: 48px;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+
+}
+.loginBtn{
+    border: none;
+    background: #3E334E;
+    color: #FFFFFF;
+}
+.loginBtn:hover{
+    border: none;
+    background: #52239a;
+    color: #FFFFFF;
+}
+.signupBtn{
+    border: 1px solid #3E334E;
+    color: #3E334E;
+}
+.signupBtn:hover{
+    border: 1px solid #3E334E;
+    color: #3E334E;
+    background: #e4e2e2;
+}
+@media (max-width: 1460px){
+    .flexbox{ 
+        margin: 0 auto;
+        /* padding: 10px; */
+    }
+    .flexbox2{
+        padding: 50px;
+    }
+}
+@media (max-width: 1240px) {
+    .flexbox{ 
+        margin: 0 auto;
+    }
+    .rootElement{
+        overflow-y: auto;
+    }
+    .loginForm{
+        flex-wrap: wrap;
+    }
+    .inner-flex{
+        max-width: 500px;
+        gap: 2rem;
+    }
+    .flexbox1{
+        width: 100%;
+    }
+    .flexbox2{
+        width: 100%;
+        padding: 50px;
+        gap: 1rem;
+    }
+}
+@media (max-width: 600px){
+    .loginForm{
+        padding: 0;
+    }
+    .flexbox{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .flexbox1{
+        background: none;
+        padding: 0;
+    }
+    .inner-flex{
+        max-width: 380px;
+        gap: 2rem;
+    }
+    .images{
+        display: none;
+    }
+    .single-img{
+        display: flex;
+    }
+    .flexbox2{
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 50px;
+    }
+}
+@media (max-width: 400px) {
+    .loginForm{
+        padding: 0;
+    }
+    .flexbox2{
+        padding: 0px;
+        padding-top: 50px;
+    }
+    .inner-flex{
+        max-width: 330px;
+    }
+}

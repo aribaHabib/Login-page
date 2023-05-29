@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./task7.css" />
+  </head>
+  <body>
+    <div class="rootElement">
+      <div class="flexbox">
+        <img
+          class="single-img"
+          src="./Images/single image.png"
+          alt="..."
+          style="object-fit: contain"
+        />
+        <div class="loginForm">
+          <div class="flexbox1">
+            <img
+              class="images"
+              style="width: 100%"
+              src="./Images/all images.png"
+              alt="..."
+              style="object-fit: contain"
+            />
+          </div>
+          <div class="flexbox2">
+            <div class="inner-flex">
+              <div class="logo">
+                <div class="image">
+                  <img src="./Images/logo.png" alt="" />
+                </div>
+                <h6 style="font-size: 32px">Archint</h6>
+              </div>
+              <p>
+                A new way to experience real state in the infinite virtual
+                space.
+              </p>
+              <h6 style="font-size: 24px">Login</h6>
+              <form action="" id="form">
+                <div class="mb-3">
+                  <label for="phone-number">Phone</label><br />
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="phone-number"
+                    value=""
+                    required=""
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="password">Password</label><br />
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    id="password"
+                    value=""
+                    required=""
+                  />
+                </div>
+                <div class="check">
+                  <div class="mb-3">
+                    <input
+                      type="checkbox"
+                      checked="checked"
+                      name="remember"
+                      class="checkboxes"
+                    />
+                    <label for="exampleCheck1">Remember me</label>
+                  </div>
+                  <p class="link"><a href="#">Forgotten password?</a></p>
+                </div>
+
+                <div class="btns">
+                  <button type="submit" class="loginBtn">Login</button>
+                  <button type="submit" class="signupBtn">Sign Up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./task7.js"></script>
+  </body>
+</html>
